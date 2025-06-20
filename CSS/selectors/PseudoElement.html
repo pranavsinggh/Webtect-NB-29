@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: purple;
+        }
+        p::first-line{
+            background-color: greenyellow;
+        }
+        p::before{
+            content: "Ratchagar ";
+        }
+        p::after{
+            content: "Ganesh";
+        }
+        div::selection{
+            background-color: black;
+            color: red;
+        }
+
+        ul>li::marker{
+            /* content: "😊"; */
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <p>🔥🔥</p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, harum ea consequuntur quam rem officiis alias cupiditate exercitationem officia quo similique eius distinctio quibusdam repudiandae dolore soluta ipsum odit quasi?
+    </div>
+
+    <ul>
+        <li>Rose</li>
+        <li>Lotus</li>
+        <li>Lily</li>
+        <li>Hibiscus</li>
+    </ul>
+</body>
+</html>

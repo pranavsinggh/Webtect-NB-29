@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form  method="post">
+      <label for="username">Username :</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        autocomplete="on"
+        autofocus
+        size="60"
+        placeholder="Enter username"
+        hidden
+      />
+      <br /><br />
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="j@gmail.com"
+        size="10"
+        readonly
+      />
+      <br /><br />
+      <label for="x">Password :</label>
+      <input
+        type="text"
+        id="x"
+        name="password"
+        autofocus
+        placeholder="Enter password"
+        required
+        pattern="[a-Z0-9@!]{5}"
+      />
+      <br /><br />
+      <label for="phone">Phone no.</label>
+      <input type="tel" id="phone" name="phoneNo." />
+      <br /><br />
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="18" max="65" step="5" />
+      <br /><br />
+      <label for="dateOFBirth">Date of birth</label>
+      <input type="date" id="dateOFBirth" name="dateOfbirth" />
+      <br /><br />
+      <label for="adress">Adress</label>
+      <textarea id="adress" rows="10" cols="80" name="adress"></textarea>
+      <br /><br />
+      <label for="">Gender :</label>
+      <input type="radio" name="gender" value="male" checked />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="others" />Others <br /><br />
+      <label for="resume">Resume</label>
+      <input type="file" id="resume" name="resume" />
+      <br /><br />
+      <label for="location">Location :</label>
+      <input type="url" id="location" name="location" />
+      <br /><br />
+      <label for="">Language :</label>
+      <select name="language" multiple>
+        <option disabled selected value="" hidden>Select language</option>
+        <optgroup label="south india">
+          <option>Tamil</option>
+          <option>Telgu</option>
+          <option>Malyalam</option>
+          <option>Kannada</option>
+        </optgroup>
+        <optgroup label="north india">
+          <option>Hindi</option>
+          <option>Urdu</option>
+          <option>Punjabi</option>
+          <option>Haryanvi</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="">Skills</label>
+      <input type="checkbox" name="skills" value="Webtech" />Webtech
+      <input type="checkbox" name="skills" value="Java" />Java
+      <input type="checkbox" name="skills" value="Python" />Python
+      <input type="checkbox" name="skills" value="SQL" checked disabled />SQL
+      <input type="checkbox" name="skills" value="Testing" />Testing
+      <br /><br />
+      <label for="">Time</label>
+      <input type="time" />
+      <br /><br />
+      <label for="">Date and Time</label>
+      <input type="datetime-local" name="" id="" />
+      <br /><br />
+      <label for="">Week</label>
+      <input type="week" />
+      <br /><br />
+      <label for="">Month</label>
+      <input type="month" />
+      <br /><br />
+      <label for="">Color</label>
+      <input type="color" />
+      <br /><br />
+      <label for="">Range</label>
+      <input type="range" />
+      <br /><br />
+      <label for="">Search</label>
+      <input type="search" />
+      <br /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Just a button</button>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </form>
+  </body>
+</html>

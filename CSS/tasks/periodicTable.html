@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Periodic Table with nth-child</title>
+  <style>
+
+    table {
+      border-collapse: collapse;
+        
+    }
+
+    td {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #aaa;
+      font-weight: bold;
+      background-color: white;
+    }
+
+    td.empty {
+      border: none;
+      background-color: transparent;
+    }
+
+    tr:nth-child(2) td:nth-child(1),
+    tr:nth-child(3) td:nth-child(1),
+    tr:nth-child(4) td:nth-child(1),
+    tr:nth-child(5) td:nth-child(1),
+    tr:nth-child(6) td:nth-child(1),
+    tr:nth-child(7) td:nth-child(1)  
+    {
+      background-color: #ff9999; /* Alkali metals */
+    }
+
+    tr:nth-child(2) td:nth-child(2),
+    tr:nth-child(3) td:nth-child(2),
+    tr:nth-child(4) td:nth-child(2),
+    tr:nth-child(5) td:nth-child(2),
+    tr:nth-child(6) td:nth-child(2),
+    tr:nth-child(7) td:nth-child(2)
+    {
+      background-color: #ffcc99; /* Alkaline earth metals */
+    }
+
+    tr:nth-child(4) td:nth-child(n+3):nth-child(-n+12),
+    tr:nth-child(5) td:nth-child(n+3):nth-child(-n+12),
+    tr:nth-child(6) td:nth-child(n+4):nth-child(-n+11),
+    tr:nth-child(7) td:nth-child(n+4):nth-child(-n+11)
+    {
+      background-color: #ffff99; /* Transition metals */
+    }
+
+    tr:nth-child(2) td:nth-child(18),
+    tr:nth-child(3) td:nth-child(18),
+    tr:nth-child(4) td:nth-child(18),
+    tr:nth-child(5) td:nth-child(18),
+    tr:nth-child(6) td:nth-child(18),
+    tr:nth-child(7) td:nth-child(18)
+    {
+      background-color: #e6e6e6; /* Noble gases */
+    }
+
+    tr:nth-child(2) td:nth-child(17),
+    tr:nth-child(3) td:nth-child(17),
+    tr:nth-child(4) td:nth-child(17),
+    tr:nth-child(5) td:nth-child(17),
+    tr:nth-child(6) td:nth-child(17),
+    tr:nth-child(7) td:nth-child(17)
+    {
+      background-color: #cc99ff; /* Halogens */
+    }
+
+    /* Invert all cells on hover */
+    /* table:hover td {
+      filter: invert(1);
+    } */
+  </style>
+</head>
+<body>
+
+<h2>Periodic Table (Using nth-child)</h2>
+
+<table>
+  <!-- Row 1 -->
+  <tr>
+    <td>H</td>
+    <td colspan="16" class="empty"></td>
+    <td>He</td>
+  </tr>
+  <!-- Row 2 -->
+  <tr>
+    <td>Li</td><td>Be</td>
+    <td colspan="10" class="empty"></td>
+    <td>B</td><td>C</td><td>N</td><td>O</td><td>F</td><td>Ne</td>
+  </tr>
+  <!-- Row 3 -->
+  <tr>
+    <td>Na</td><td>Mg</td>
+    <td colspan="10" class="empty"></td>
+    <td>Al</td><td>Si</td><td>P</td><td>S</td><td>Cl</td><td>Ar</td>
+  </tr>
+  <!-- Row 4 -->
+  <tr>
+    <td>K</td><td>Ca</td><td>Sc</td><td>Ti</td><td>V</td><td>Cr</td><td>Mn</td>
+    <td>Fe</td><td>Co</td><td>Ni</td><td>Cu</td><td>Zn</td>
+    <td>Ga</td><td>Ge</td><td>As</td><td>Se</td><td>Br</td><td>Kr</td>
+  </tr>
+  <!-- Row 5 -->
+  <tr>
+    <td>Rb</td><td>Sr</td><td>Y</td><td>Zr</td><td>Nb</td><td>Mo</td><td>Tc</td>
+    <td>Ru</td><td>Rh</td><td>Pd</td><td>Ag</td><td>Cd</td>
+    <td>In</td><td>Sn</td><td>Sb</td><td>Te</td><td>I</td><td>Xe</td>
+  </tr>
+  <!-- Row 6 -->
+  <tr>
+    <td>Cs</td><td>Ba</td><td>La*</td><td>Hf</td><td>Ta</td><td>W</td><td>Re</td>
+    <td>Os</td><td>Ir</td><td>Pt</td><td>Au</td><td>Hg</td>
+    <td>Tl</td><td>Pb</td><td>Bi</td><td>Po</td><td>At</td><td>Rn</td>
+  </tr>
+  <!-- Row 7 -->
+  <tr>
+    <td>Fr</td><td>Ra</td><td>Ac*</td><td>Rf</td><td>Db</td><td>Sg</td><td>Bh</td>
+    <td>Hs</td><td>Mt</td><td>Ds</td><td>Rg</td><td>Cn</td>
+    <td>Nh</td><td>Fl</td><td>Mc</td><td>Lv</td><td>Ts</td><td>Og</td>
+  </tr>
+  <!-- Lanthanides -->
+  <tr>
+    <td colspan="2" class="empty"></td>
+    <td>Ce</td><td>Pr</td><td>Nd</td><td>Pm</td><td>Sm</td><td>Eu</td><td>Gd</td>
+    <td>Tb</td><td>Dy</td><td>Ho</td><td>Er</td><td>Tm</td><td>Yb</td><td>Lu</td>
+  </tr>
+  <!-- Actinides -->
+  <tr>
+    <td colspan="2" class="empty"></td>
+    <td>Th</td><td>Pa</td><td>U</td><td>Np</td><td>Pu</td><td>Am</td><td>Cm</td>
+    <td>Bk</td><td>Cf</td><td>Es</td><td>Fm</td><td>Md</td><td>No</td><td>Lr</td>
+  </tr>
+</table>
+
+</body>
+</html>
