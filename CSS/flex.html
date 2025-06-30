@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      main {
+        height: 700px;
+        width: 1200px;
+        margin-left: 150px;
+        border: 4px solid red;
+
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: end;
+
+        /* row-gap: 10px;
+            column-gap: 50px; */
+        /* gap: 10px 50px; */
+        gap: 50px;
+
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+
+        flex-wrap: wrap-reverse;
+
+        flex-flow: column-reverse wrap-reverse;
+        flex-flow: row wrap;
+        align-content: space-evenly;
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      div {
+        height: 150px;
+        width: 150px;
+        font-size: 2rem;
+        border: solid;
+      }
+      main div:nth-child(1) {
+        background-color: aquamarine;
+        order:3
+
+      }
+      main div:nth-child(2) {
+        background-color: tan;
+
+        order:5
+      }
+      main div:nth-child(3) {
+        background-color: hotpink;
+        align-self: end;
+      }
+      main div:nth-child(4) {
+        background-color: goldenrod;
+      
+      }
+      main div:nth-child(5) {
+        background-color: dodgerblue;
+        order:-1;
+
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <!-- <div>7</div>
+      <div>8</div>
+      <div>9</div> -->
+    </main>
+  </body>
+</html>
