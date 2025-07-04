@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        height: 500px;
+        width: 800px;
+        border: solid;
+        position:fixed;
+      }
+      div{
+        height: 120px;
+        width: 120px;
+        color: hotpink;
+        font-size: 2rem;
+      }
+      div:nth-child(1){
+        background-color: black;
+        /* position: static;
+        left: 100px; */
+
+        /* top: 1000px; */
+
+        /* position: sticky;
+        top: 20px; */
+
+        /* position: absolute;
+        bottom: 0;
+        left: 0; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      div:nth-child(2){
+        background-color: antiquewhite;
+        /* position: relative;
+        right: 200px;
+        top: 700px; */
+
+        /* position: relative;
+        left: 300px;
+        top: 1000px; */
+
+        /* position: absolute;
+        top: 0;
+        right: 0; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 6;
+      }
+      div:nth-child(3){
+        background-color: red;
+        /* position: absolute;
+        top: 100px;
+        left: 100px; */
+
+        /* position: absolute;
+        top: -10px;
+        left: -50px; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+      }
+      div:nth-child(4){
+        background-color: grey;
+        /* position: fixed;
+        top: 0px;
+        right: 0px; */
+
+        /* position: fixed;
+        bottom: 0;
+        right: 0; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      div:nth-child(5){
+        background-color: aquamarine;
+        height: 120px;
+        width: 120px;
+        /* position: absolute;
+        top: 190px;
+        left: 340px; */
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+  </body>
+</html>

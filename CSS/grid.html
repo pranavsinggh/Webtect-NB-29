@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            height: 500px;
+            width: 700px;
+            border: solid;
+            
+            /* display: grid;
+
+            grid-template-rows: 100px 100px 50px 250px; */
+            /* grid-template-columns: 300px 300px 100px 100px ; */
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            /* grid-template-columns: 160px 160px 160px 160px 160px; */
+            /* grid-template-columns:133px 133px 133px 133px 133px 133px ; */
+
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns:15% 40% 25% 20% ; */
+            /* grid-template-columns: 1fr 5fr 1fr 2fr; */
+            /* grid-template-columns: repeat(2,40%) ; */
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,auto);
+            gap: 10px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div:nth-child(1){
+            background-color: red;
+            /* height: 100px;
+            width: 100px; */
+/* 
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        div:nth-child(2){
+            background-color: blue;
+
+            grid-row-start:2;
+            grid-row-end:4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        div:nth-child(3){
+            background-color: green;
+
+            /* grid-column-start: 3;
+            grid-column-end: 5; */
+
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        div:nth-child(4){
+            background-color: yellow;
+
+            /* grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 5; */
+
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</body>
+</html>
