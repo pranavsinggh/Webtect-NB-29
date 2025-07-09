@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        height: 400px;
+        width: 400px;
+        border: 5px dashed brown;
+        background-color: black;
+
+        /* animation-name: changeColor;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse; 
+        animation-iteration-count: infinite; */
+
+        animation: changeColor 5s 2s linear reverse infinite;
+      }
+
+      @keyframes changeColor {
+        0% {
+          background-color: black;
+          border-radius: 0%;
+        }
+        25%{
+            background-color: green;
+        }
+        50%{
+            background-color: yellow;
+        }
+        75%{
+            background-color: blue;
+        }
+        100% {
+          background-color: red;
+          border-radius: 50%;
+          /* transform: translateX(300px); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

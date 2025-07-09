@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @media print {
+        p {
+          color: red;
+          border: 2px solid black;
+          background-color: blue;
+          font-size: 24px;
+          height: 200px;
+        }
+        h2 {
+          margin-top: 100px;
+          color: green;
+        }
+      }
+
+      @media screen {
+        h1 {
+          color: black;
+          background-color: red;
+        }
+      }
+
+      @media all {
+        h2 {
+          background-color: yellow;
+        }
+      }
+
+      @media screen and (width>1000px) {
+        h1 {
+          background-color: black;
+          color: white;
+        }
+        h1::before {
+          content: "Desktop ";
+        }
+      }
+      @media screen and (width>700px) and (width<1000px) {
+        h1 {
+          background-color: yellow;
+          color: green;
+        }
+        h1::before {
+          content: "Laptop ";
+        }
+      }
+
+      @media screen and (500px < width < 700px) {
+        h1::before {
+          content: "Tablet ";
+        }
+      }
+
+      @media screen and (width<500px) {
+        h1 {
+          background-color: white;
+          color: black;
+        }
+        h1::before {
+          content: "Mobile ";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Screen</h1>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore
+        numquam? Nemo non explicabo exercitationem dolor laudantium maxime
+        libero aperiam ullam consectetur aliquid repudiandae, atque consequatur
+        animi adipisci, distinctio laborum quasi magni voluptatibus beatae vero.
+        Atque, omnis. Natus tenetur aperiam nemo accusantium earum. Iure,
+        repellat. Laborum nulla odit quam maxime numquam ipsum atque sunt
+        molestias reprehenderit nemo qui dicta, fugiat porro fugit non nobis
+        eligendi, quo omnis illo tempora. Fugiat voluptatibus harum nostrum
+        excepturi cumque cupiditate, quidem placeat autem sunt quo ipsum eveniet
+        totam molestiae tenetur, incidunt accusantium dolorum voluptatum libero.
+        Inventore aut nulla id, ipsum harum voluptatibus nam mollitia?
+      </p>
+    </section>
+    <h2>How are you?</h2>
+  </body>
+</html>

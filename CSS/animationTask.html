@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        height: 600px;
+        width: 1000px;
+        border: 5px solid red;
+      }
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+
+        animation: changePosition 10s 1s linear normal infinite;
+      }
+
+      @keyframes changePosition {
+        0%,100% {
+          transform: translate(0px, 0px);
+        }
+        25% {
+          transform: translate(800px, 0px);
+        }
+        50% {
+          transform: translate(800px, 400px);
+        }
+        75% {
+          transform: translate(0px, 400px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+    </section>
+  </body>
+</html>
