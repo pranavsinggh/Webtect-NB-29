@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class SubjectMenu 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Welcome");
+		boolean flag=true;
+		
+		do{
+			System.out.print("1 -> Webtech \n2 -> Java \n3 -> SQL \n4 -> Manual \n5 -> Exit\n");
+			System.out.print("Enter your choice : ");
+			int choice=sc.nextInt();
+			
+			switch(choice)
+			{
+				case 1:System.out.println("Shantanu");
+						break;
+				case 2:System.out.println("Pranav");
+						break;
+				case 3:System.out.println("Vinod");
+						break;
+				case 4:System.out.println("Gajanan");
+						break;
+				case 5:flag=false;
+						break;
+				default : System.out.println("Invalid input");
+			}
+		}while(flag);
+	}
+}

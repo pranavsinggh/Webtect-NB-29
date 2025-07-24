@@ -1,0 +1,1 @@
+console.log("Hii from external javascript");
