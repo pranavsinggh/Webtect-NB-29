@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Gautam"
+  },
+  {
+    "id": 2,
+    "name": "Narendar"
+  },
+  {
+    "id": 3,
+    "name": "Pranav",
+    "language": [
+      {
+        "name": "HTML",
+        "tags": ["a", "b", "c", "d"]
+      },
+      {
+        "name":"CSS",
+        "property":["color","animation","flex"]
+      },
+      "Javascript",
+      "React",
+      "Java"
+    ]
+  }
+]
