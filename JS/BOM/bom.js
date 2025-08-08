@@ -36,11 +36,63 @@
 // }
 // console.log("End");
 
+// console.log("Start");
+// let id2 = setTimeout(() => {
+//   console.log("asnychronus task");
+// }, 2000);
+// clearTimeout(id2);
+// let id1 = setInterval(() => {
+//   console.log("Execute again and again");
+// }, 2000);
+// setTimeout(() => {
+//   console.log("Clearing the setInterval");
+//   clearInterval(id1);
+// }, 11000);
+
+// console.log("End");
+
 console.log("Start");
+
+//~ setTimeout(callback_fn,timePeriod(milliseconds),[arguments])
+
+//~ clearTimeout(timeoutId)
+// let timeout=setTimeout(() => {
+//   alert("Will not execute")
+// },3000)
+// clearTimeout(timeout)
+
+//~ setInterval(callback_fn,timePeriod(milliseconds),[arguments])
+
+//~ clearInterval(intervalId)
+// let interval=setInterval(() => {
+//   alert("Message appear every 3 sec")
+// },3000)
+// clearInterval(interval)
+
+
+// setTimeout((name, age) => {
+//   console.log("Hi",name,"my age is",age);
+// }, 2000 , "pranav",10);
+
+// let intervalId = setInterval(
+//   (name, age) => {
+//     console.log("Hi", name, "my age is", age);
+//   },
+//   2000,
+//   "Pranav",
+//   10
+// );
+
+// setTimeout(() => {
+//   clearInterval(intervalId);
+// }, 10000);
+
+let timeoutId = setTimeout(() => {
+  console.log("I am a bomb");
+}, 4000);
+
 setTimeout(() => {
-  console.log("asnychronus task");
-}, 2000);
-setInterval(() => {
-  console.log("Execute again and again");
-}, 2000);
+  clearTimeout(timeoutId);
+}, 6000);
+
 console.log("End");
