@@ -12,13 +12,15 @@ let nameInput = document.createElement("input");
 form.appendChild(nameInput);
 
 // Create -> setAttribute()
+//element.setAttribute("attribute","value")
 nameInput.setAttribute("id", "name");
 nameInput.setAttribute("name", "name");
 nameInput.setAttribute("placeholder", "Enter name");
 
 // Read -> getAttribute()
-console.log(nameInput.getAttribute("id"));
-console.log(nameInput.getAttribute("placeholder"));
+//element.getAttribute("attribute")
+console.log(nameInput.getAttribute("id"));          // name
+console.log(nameInput.getAttribute("placeholder")); // Enter name
 console.log(nameInput.getAttribute("name"));
 
 // Update -> setAttribute()
@@ -27,6 +29,7 @@ nameInput.setAttribute("id", "username");
 nameLabel.setAttribute("for", "username");
 
 // Delete -> removeAttribute()
+// element.removeAttribute()
 // nameInput.removeAttribute("placeholder")
 // nameInput.removeAttribute("id")
 // nameInput.removeAttribute("name")
@@ -34,19 +37,18 @@ nameLabel.setAttribute("for", "username");
 // nameInput.setAttribute("class", "login");
 // nameInput.setAttribute("class", "black");
 // nameInput.setAttribute("class", "home");
-// nameInput.setAttribute("class","login black home")
 
+// to add the classes to the element we use classList.add("class")
 nameInput.classList.add("home")
 nameInput.classList.add("black")
 nameInput.classList.add("login")
 
+// to remove the classes from the element we use classList.remove("class")
 nameInput.classList.remove("black")
 nameInput.classList.remove("login")
 
-nameInput.classList.toggle("black")
-nameInput.classList.toggle("black")
-nameInput.classList.toggle("black")
-nameInput.classList.toggle("black")
-
-
-console.dir(nameInput)
+// to toggle between the classes (if not present add, if present remove) we use classList.toggle("class")
+nameInput.classList.toggle("black")     // Add
+nameInput.classList.toggle("black")     // Remove
+nameInput.classList.toggle("black")     // Add
+nameInput.classList.toggle("black")     // Remove
