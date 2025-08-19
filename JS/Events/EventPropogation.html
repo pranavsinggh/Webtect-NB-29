@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 98vh;
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      article {
+        height: 50vh;
+        width: 50vw;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        height: 35vh;
+        width: 35vw;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        height: 25vh;
+        width: 25vw;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="grandParent">
+      <main id="parent">
+        <div id="child"></div>
+      </main>
+    </article>
+
+    <script src="./EventPropogation.js"></script>
+  </body>
+</html>
